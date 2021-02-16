@@ -1,0 +1,152 @@
+[
+    {
+        "Id": "sha256:cd14cecfdb3a657ba7d05bea026e7ac8b9abafc6e5c66253ab327c7211fa6281",
+        "RepoTags": [
+            "jenkins:2.60.3"
+        ],
+        "RepoDigests": [
+            "jenkins@sha256:eeb4850eb65f2d92500e421b430ed1ec58a7ac909e91f518926e02473904f668"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2018-07-17T16:20:34.183816595Z",
+        "Container": "a3e3890f6333066d464113032a93622a8a12305fa1cf7a29e57ad29cbde66a19",
+        "ContainerConfig": {
+            "Hostname": "a3e3890f6333",
+            "Domainname": "",
+            "User": "jenkins",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "50000/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "JAVA_HOME=/docker-java-home",
+                "JAVA_VERSION=8u171",
+                "JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1",
+                "CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1",
+                "JENKINS_HOME=/var/jenkins_home",
+                "JENKINS_SLAVE_AGENT_PORT=50000",
+                "TINI_VERSION=0.14.0",
+                "TINI_SHA=6c41ec7d33e857d4779f14d9c74924cab0c7973485d2972419a3b7c7620ff5fd",
+                "JENKINS_VERSION=2.60.3",
+                "JENKINS_UC=https://updates.jenkins.io",
+                "JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental",
+                "COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) COPY file:a4f750618f51f00d2f8268ac43fdd8d8ef5ce16e1d412afa5a9bc7492a5d975f in /usr/local/bin/install-plugins.sh "
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:9e1d90142b1a1b659fae5d4b6427c3196495b24006ac29943aac019390bdd5d1",
+            "Volumes": {
+                "/var/jenkins_home": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/bin/tini",
+                "--",
+                "/usr/local/bin/jenkins.sh"
+            ],
+            "OnBuild": [],
+            "Labels": {}
+        },
+        "DockerVersion": "17.06.2-ce",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "jenkins",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "50000/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "JAVA_HOME=/docker-java-home",
+                "JAVA_VERSION=8u171",
+                "JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1",
+                "CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1",
+                "JENKINS_HOME=/var/jenkins_home",
+                "JENKINS_SLAVE_AGENT_PORT=50000",
+                "TINI_VERSION=0.14.0",
+                "TINI_SHA=6c41ec7d33e857d4779f14d9c74924cab0c7973485d2972419a3b7c7620ff5fd",
+                "JENKINS_VERSION=2.60.3",
+                "JENKINS_UC=https://updates.jenkins.io",
+                "JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental",
+                "COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log"
+            ],
+            "Cmd": null,
+            "ArgsEscaped": true,
+            "Image": "sha256:9e1d90142b1a1b659fae5d4b6427c3196495b24006ac29943aac019390bdd5d1",
+            "Volumes": {
+                "/var/jenkins_home": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/bin/tini",
+                "--",
+                "/usr/local/bin/jenkins.sh"
+            ],
+            "OnBuild": [],
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 695718055,
+        "VirtualSize": 695718055,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/5f9d1029f1da554f1dec87d8eb0882ee0d5bba01f8c9a227a2b5ef074942c2ca/diff:/var/lib/docker/overlay2/bda15e26d9cb85d6114b9e158cea01eaecb4d1eca6a5d6623d22e4da070ef75a/diff:/var/lib/docker/overlay2/7eccae866edf3e0f19c0d63138e59eded5e8ce50172340730d5647e999f88520/diff:/var/lib/docker/overlay2/b44a43eb19530034b77a78508d655b1cc4c24a4e986742f6cc7126951bb17ded/diff:/var/lib/docker/overlay2/4b72e619b186aaee7a7f1fff4015e25007de79b74c53d22ab7b5dca9c51720ea/diff:/var/lib/docker/overlay2/25dce6b476ec173223475e1933c3401660228ce3250c3dd115020a1d930c2d38/diff:/var/lib/docker/overlay2/a375c3d8ab89e1c3af857427a9518cdae40c48110654cb4b8a62f1d8873681cc/diff:/var/lib/docker/overlay2/7d8ff22ada1e810f6ff944db77ff726f3e37e33fad8345908534a4f31e199da8/diff:/var/lib/docker/overlay2/9180e477965801df1aa9caab439b321f68e21125e8f20cfd5a570c462326e182/diff:/var/lib/docker/overlay2/8f56f75b77e19687438f178e4d08d953139b5d57980428c635b8858a1d1ec0a3/diff:/var/lib/docker/overlay2/6a9eb1e078a9018d75230eef6b3aecad4e78bb0f79c81463e94869615aa24602/diff:/var/lib/docker/overlay2/5d5016afdf8f728215eb5b9d8ca35c8a69eddef10527da0d5ef09a8cd15833d3/diff:/var/lib/docker/overlay2/67e8b982b048ebffb874f5580dc245d45826f69563e1557b630c67d70af0f3e9/diff:/var/lib/docker/overlay2/d0248fd50a5c66560b9d84c0be53d61de171fd8ab2db979d7de0f07103c27f36/diff:/var/lib/docker/overlay2/f4eb027841787d9c2769b4aae5b93343a39c5cb36b483731b5fec61b99d00984/diff:/var/lib/docker/overlay2/4d85a88eae1d237140b47be797a7732ca51429f6d455b9f3f2b14e34e412157d/diff:/var/lib/docker/overlay2/ee27e8b3111a1666176bfeb9f26a00466eaed752f051b705ee4f189c47430397/diff:/var/lib/docker/overlay2/cc1099e8eb955c6ae3ebc056c7b0ce3d230191e900b805297d85005c41a788ae/diff:/var/lib/docker/overlay2/9b43ba685ee8e9c1c7786008a14b86cb079b63942e1b914dcdc2667aa9703628/diff",
+                "MergedDir": "/var/lib/docker/overlay2/d6c4a94bf3860db378aef1e40f2b8dc46397f91c0263ea60770eaab23a0ef80f/merged",
+                "UpperDir": "/var/lib/docker/overlay2/d6c4a94bf3860db378aef1e40f2b8dc46397f91c0263ea60770eaab23a0ef80f/diff",
+                "WorkDir": "/var/lib/docker/overlay2/d6c4a94bf3860db378aef1e40f2b8dc46397f91c0263ea60770eaab23a0ef80f/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:3b10514a95bec77489a57d6e2fbfddb7ddfdb643907470ce5de0f1b05c603706",
+                "sha256:719d45669b35360e3ca0d53d159c42ca9985eb925a6b28ac38d0ded39a1314e8",
+                "sha256:ce6466f43b110e66d7d3a72600262a1f1b015d9a64aad5f133f081868d4825fc",
+                "sha256:fa0c3f992cbd10a0569ed212414b50f1c35d97521f7e4a9e55a9abcf47ca77e2",
+                "sha256:c477b6c8ca459c76222eb535faedb8979f4094552ac2a6cd56cb0f29262fdcfb",
+                "sha256:9c2e8b91bfa88a95f732adec2bfc5c03fb40c535e6646ecf386235cdfb4e0e96",
+                "sha256:c3ebb2aa7787555b542be6400d8064ae209a29d90c6e1b99ac5d02d5040392b4",
+                "sha256:518c9e7eb3264c27c8d77b4d194c80d14373c5942c2da2e4409f062573139f1b",
+                "sha256:571ae0d6961ab39851cdf93f5a753902cdd563d82e78cea54cbb6b0d420eb8f4",
+                "sha256:9fe468dbb76f324cd4287ea7e32edf6fe0f8aa993776fc152a17ae4a9a68f948",
+                "sha256:6ff38243bfb80a82749f0a954d1bd2faaa5673de4be5d5d9665100e2785fed40",
+                "sha256:c19390bb619a105dd32e573b3a26765216ee27736304266909104607045b4779",
+                "sha256:a0775f499ef138c2badd29831b31c28f4515c7802d0bde35111c8f8c7b60ed7d",
+                "sha256:1db7316340117880a83816808041a1f9ea1848632ab72f51ce79fb60a6135e3e",
+                "sha256:047f9c957a2e718be97e9928f1170d25e7dadd71737ca2a1e8e3db139c905915",
+                "sha256:ceed640cbb9350a13ce3051520b59833fb2fc4bc05c69873792293a2a27a485c",
+                "sha256:d51e4482f53a5764af588bea1c8dda817e968af11e7e2df3ae3051757e1dc533",
+                "sha256:37c1d818eb0bf741290f4122d6ae95b1dffb1f544896b0089ad7789613fa8804",
+                "sha256:b1891bf16fa79f6376941e4b2409d26f2c85e993de9ba3dcaee57dc80ac4d889",
+                "sha256:0577e068c587d352efe5dd72477ae6927626840d167fbbf59e17241b8f50a127"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
