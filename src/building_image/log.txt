@@ -1,0 +1,33 @@
+ ~/Desktop/Learning-Container/src/building_image/myservice $ docker pull python:3.8.2
+3.8.2: Pulling from library/python
+...
+Status: Downloaded newer image for python:3.8.2
+docker.io/library/python:3.8.2
+ ~/Desktop/Learning-Container/src/building_image/myservice $ cat > dockerfile
+FROM python:3.8.2
+
+RUN mkdir /echo
+COPY echo_server.py /echo
+
+CMD ["python", "/echo/echo_server.py"]
+ ~/Desktop/Learning-Container/src/building_image/myservice $ docker build -t myservice .
+[+] Building 1.1s (8/8) FINISHED                                                                                                               
+ => [internal] load build definition from Dockerfile                                                                                      0.1s
+ => => transferring dockerfile: 162B                                                                                                      0.0s
+ => [internal] load .dockerignore                                                                                                         0.0s
+ => => transferring context: 2B                                                                                                           0.0s
+ => [internal] load metadata for docker.io/library/python:3.8.2                                                                           0.0s
+ => [1/3] FROM docker.io/library/python:3.8.2                                                                                             0.1s
+ => => resolve docker.io/library/python:3.8.2                                                                                             0.0s
+ => [internal] load build context                                                                                                         0.1s
+ => => transferring context: 519B                                                                                                         0.0s
+ => [2/3] RUN mkdir /echo                                                                                                                 0.7s
+ => [3/3] COPY echo_server.py /echo                                                                                                       0.0s
+ => exporting to image                                                                                                                    0.0s
+ => => exporting layers                                                                                                                   0.0s
+ => => writing image sha256:a8305c3**************************************************510811e                                              0.0s
+ => => naming to docker.io/library/myservice                                                                                              0.0s
+ ~/Desktop/Learning-Container/src/building_image/myservice $ docker images
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+myservice    latest    a8305c39c7ab   3 minutes ago   934MB
+python       3.8.2     4f7cd4269fa9   9 months ago    934MB

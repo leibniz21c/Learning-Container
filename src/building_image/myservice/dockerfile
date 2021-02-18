@@ -1,0 +1,8 @@
+FROM python:3.8.2
+
+RUN mkdir /echo
+COPY echo_server.py /echo
+
+CMD ["python", "/echo/echo_server.py"]FROM Python:3.8.2
+
+
