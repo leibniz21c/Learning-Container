@@ -1,7 +1,0 @@
- ~/Desktop/Learning-Container/nginx $ docker pull nginx
-...
- ~/Desktop/Learning-Container/nginx $ docker run -d -p 80:80 --rm --name nx -v /Users/leibniz/Desktop/Learning-Container/nginx/www:/usr/share/nginx/html:ro nginx
-ff52bd86*********************************9d3135******3f0febb
- ~/Desktop/Learning-Container/nginx $ docker ps
-CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                NAMES
-ff52bd860167   nginx     "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes   0.0.0.0:80->80/tcp   nx 
