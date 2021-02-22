@@ -55,3 +55,6 @@
     1. Setting docker image to push
     2. Push
     3. History of image
+10. Push to dockerhub
+    1. How to make private registry?
+    2. How to push/pull images to private registry?
